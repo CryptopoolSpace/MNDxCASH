@@ -8,7 +8,8 @@
         {"content": "Team", "ref": "nav-team"},
         {"content": "Supports", "ref": "nav-supports"},
         {"content": "Advisors", "ref": "nav-advisors"},
-        {"content": "Partners", "ref": "nav-partners"}
+        {"content": "Partners", "ref": "nav-partners"},
+        {"content": "<a href='https://medium.com/@usdx' target='_blank'>Blog</a>", "ref": "nav-blog"}
     ],
     "icon": [
         {
