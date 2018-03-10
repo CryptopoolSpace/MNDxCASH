@@ -38,6 +38,9 @@
         .title{
             text-align: center;
             margin: 0 auto;
+            br{
+                display: none;;
+            }
 
             .content{
                 font-size: 47px;

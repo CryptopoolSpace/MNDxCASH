@@ -1,6 +1,8 @@
 <template>
     <div class="fatalBox">
-        <Head htitle="Current Stablecoin Projects’ Fatal Problems"  lineHeight="2"></Head>
+
+
+        <Head htitle="Fatal Problems of Current <br/>Stablecoin Projects"  lineHeight="2"></Head>
         <p class="desc">Traditional Stablecoin projects collect fiat currency as collateral and generate Stablecoin through money<br/> covertion companies, which can pose a risk to policies and cause moral problems.</p>
         <div class="itemBox clearfix">
             <div class="height50"></div>
@@ -8,7 +10,7 @@
                 <img src="../../images/fatal01.png"/>
                 <h2>Regulatory Risk</h2>
                 <p class="mobileShow">Tether’s account for fiat <br/>currency can be frozen at any <br/>time under regulation.</p>
-                <p class="mobileHide">Tether’s account for fiat currency can be frozen at any time under <br/>regulation.</p>
+                <p class="mobileHide">Tether’s account for fiat currency can be frozen at any time <br/>under regulation.</p>
             </div>
             <div class="right">
                 <h2>Moral Hazard</h2>
@@ -20,7 +22,7 @@
         <!--scandals-->
         <div class="scanBox">
             <div class="title">
-                <h2>USDT'S SCANDALS</h2>
+                <h2>SCANDALS OF USDT</h2>
                 <i class="line"></i>
             </div>
             <div class="scrollBox mobileHide">

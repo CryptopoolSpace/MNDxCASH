@@ -3,9 +3,9 @@
         <Head htitle="USDX：The New Era of Stablecoin"></Head>
         <div class="navBtnBox clearfix">
             <ul>
-                <li :class="curIndex == 0? 'active':''" @click="selectTab(0)">Innovative De-Commerce</li>
-                <li :class="curIndex == 1? 'active':''" @click="selectTab(1)">Bottom-Up Revolution</li>
-                <li :class="curIndex == 2? 'active':''" @click="selectTab(2)">Extreme Stabilization</li>
+                <li :class="curIndex == 0? 'active':''" @click="selectTab(0)">Bottom-Up Revolution</li>
+                <li :class="curIndex == 1? 'active':''" @click="selectTab(1)">Extreme Stabilization</li>
+                <li :class="curIndex == 2? 'active':''" @click="selectTab(2)">Innovative De-Commerce</li>
             </ul>
         </div>
 
@@ -13,32 +13,7 @@
 
     <div class="phaseBox">
         <swiper :options="swiperOption" ref="mySwiper">
-            <swiper-slide>
-                <div class="introCtn clearfix">
-                    <div class="leftImg">
-                        <img src="../../images/phase01.png" class="phase01"/>
-                        <img src="../../images/usdt-icon.png" class="usdt scaleUSDT"/>
-                        <img src="../../images/usdx-icon.png" class="usdx scaleUSDX">
-                    </div>
-                    <div class="rightCtn">
-                        <div class="sectionCtn">
-                            <h3>Kill the Centralized Mechanism</h3>
-                            <p>1. Tether can release USDT without any collateral and perform as a centralized <br/>entity.
-                            </p>
-                            <p>2. With USDX’s absolute decentralized system, we build a healthy and organic <br/>decommerce ecosystem.
 
-                            </p>
-                        </div>
-                        <div class="sectionCtn">
-                            <h3>No Collateral No Fraud and No Risk</h3>
-                            <p>1. Fiat currency as collateral have to be placed in one bank account and the bank <br/>account can be frozen at any time  for fraud.
-                            </p>
-                            <p>2. Cryptocurrency as collateral is extremely volatile, and can easily destroy the <br/>market before the stablecoin is widely used.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </swiper-slide>
             <swiper-slide>
                 <div class="introCtn clearfix">
                     <div class="leftImg">
@@ -65,6 +40,7 @@
                     </div>
                 </div>
             </swiper-slide>
+
             <swiper-slide>
                 <div class="introCtn clearfix">
                     <div class="leftImg">
@@ -84,6 +60,33 @@
                             <p>1.Variable Block Reward</p>
                             <p>2.Mining Lock</p>
                             <p>3.Variable Transaction Fee</p>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="introCtn clearfix">
+                    <div class="leftImg">
+                        <img src="../../images/phase01.png" class="phase01"/>
+                        <img src="../../images/usdt-icon.png" class="usdt scaleUSDT"/>
+                        <img src="../../images/usdx-icon.png" class="usdx scaleUSDX">
+                    </div>
+                    <div class="rightCtn">
+                        <div class="sectionCtn">
+                            <h3>Kill the Centralized Mechanism</h3>
+                            <p>1. Tether can release USDT without any collateral and perform as a centralized <br/>entity.
+                            </p>
+                            <p>2. With USDX’s absolute decentralized system, we build a healthy and organic <br/>decommerce ecosystem.
+
+                            </p>
+                        </div>
+                        <div class="sectionCtn">
+                            <h3>No Collateral No Fraud and No Risk</h3>
+                            <p>1. Fiat currency as collateral have to be placed in one bank account and the bank <br/>account can be frozen at any time  for fraud.
+                            </p>
+                            <p>2. Cryptocurrency as collateral is extremely volatile, and can easily destroy the <br/>market before the stablecoin is widely used.
+                            </p>
                         </div>
                     </div>
                 </div>

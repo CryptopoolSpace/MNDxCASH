@@ -74,7 +74,7 @@
                                 <p>Mainnet released</p>
                                 <p>&nbsp;</p>
                             </div>
-                            <div class="number pl38">Q1</div>
+                            <div class="number pl38" style="padding-top: 39px;">Q1</div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -102,6 +102,82 @@
                             <div class="number pl34">Q3</div>
                         </div>
                     </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4" style="padding-left: 39px;">Q4</div>
+                        <div class="content" style="padding-left:0px;">
+                            <p>Establishing an institution</p>
+                            <p>about making traditional assets</p>
+                            <p>up to the blockchain</p>
+                            <p>&nbsp;</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="top">
+                        <!--<div class="headBar"></div>-->
+                        <div class="headBar roadTitle">
+                            <div class="mt mt34">
+                                <h3>2020</h3>
+                                <p>The Dark Knight Rises</p>
+                                <i class="line"></i>
+                            </div>
+                        </div>
+                        <div class="content" style="padding-left: 0px;">
+                            <p>Improving the protocol</p>
+                            <p>performance</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="number pl116" style="padding-left: 30px;">Q1</div>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4" style="padding-left: 35px;">Q2</div>
+                        <div class="content" style="padding-left: 0px;">
+                            <p>Enriching the  D-apps</p>
+                            <p>Improving the speed of network</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="top">
+                        <div class="headBar"></div>
+                        <div class="content" style="padding-left: 00px;">
+                            <p>Iproving the scale and security</p>
+                            <p>and Ttpreparing for a broader</p>
+                            <p>ecosystem</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="number pl116" style="padding-left: 25px;">Q3</div>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4" style="padding-left: 31px;">Q4</div>
+                        <div class="content" style="padding-left: 0px;margin-left: -22px;">
+                            <p>Establishing the decentralized</p>
+                            <p>exchanges</p>
+                            <p>Enriching Stablecoins pegging</p>
+                            <p>to other indexes</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
                     <swiper-slide>
                         <div class="bottom"></div>
                     </swiper-slide>
@@ -233,6 +309,30 @@
                     background-position: 880px 108px;
 
                 }
+
+                .swiper-slide:nth-child(9){
+                    background-position: 1012px 108px;
+
+                }
+
+                .swiper-slide:nth-child(10){
+                    background-position: 1144px 108px;
+
+                }
+
+                .swiper-slide:nth-child(11){
+                    background-position: 1276px 108px;
+
+                }
+
+                .swiper-slide:nth-child(12){
+                    background-position: 1408px 108px;
+
+                }
+                .swiper-slide:nth-child(13){
+                    background-position: 1540px 108px;
+
+                }
                 ul{
                     li{
                         float: left;
@@ -319,6 +419,10 @@
                     .headBar{
                         height: 92px;
                         width: 100%;
+                    }
+                    .plptQ4{
+                        padding-left: 34px;
+                        padding-top: 26px;
                     }
                 }
                 .swiper-button-prev_road_phone{

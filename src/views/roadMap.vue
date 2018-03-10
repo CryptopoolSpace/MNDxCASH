@@ -9,14 +9,14 @@
                             <div class="headBar roadTitle">
                                 <div class="mt">
                                     <h3>2018</h3>
-                                    <p>The Dark Knight Rises</p>
+                                    <p>Stablecoin Begins</p>
                                     <i class="line"></i>
                                 </div>
                             </div>
                             <div class="content">
-                                <p>Setting up foundation in</p>
-                                <p>Singapore</p>
+                                <p>Setting up foundation in Singapore</p>
                                 <p>Setting up community</p>
+                                <p>&nbsp;</p>
                                 <p>&nbsp;</p>
                             </div>
                             <div class="number">Q1</div>
@@ -40,8 +40,8 @@
                             <div class="content">
                                 <p>Setting up foundation</p>
                                 <p>branch in Korea</p>
-                                <p>Landing on the Korean</p>
-                                <p>market</p>
+                                <p>Landing on the Korean market</p>
+                                <p>&nbsp;</p>
                             </div>
                             <div class="number pl78 pt84">Q3</div>
                         </div>
@@ -50,11 +50,11 @@
                         <div class="bottom">
                             <div class="headBar"></div>
                             <div class="number pl101">Q4</div>
-                            <div class="content pl30">
-                                <p>Introducing protocol of</p>
-                                <p>main function on </p>
-                                <p>the independent public</p>
-                                <p>blockchain</p>
+                            <div class="content pl8">
+                                <p>Introducing protocol of main</p>
+                                <p>function on the independent</p>
+                                <p>public blockchain</p>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                     </swiper-slide>
@@ -63,20 +63,24 @@
                             <div class="headBar roadTitle">
                                 <div class="mt mt45">
                                     <h3>2019</h3>
-                                    <p>Game of Stablecoin World</p>
+                                    <p>The Dark Knight</p>
                                     <i class="line"></i>
                                 </div>
                             </div>
                             <div class="content pl45">
-                                <p>Alpha version of </p>
-                                <p>Mainnet released</p>
-                                <p>Beta version of</p>
-                                <p>Mainnet released</p>
+                                <p>The test network being released</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+
                             </div>
                             <div class="number pl96 pt101" style="">Q1</div>
                         </div>
                     </swiper-slide>
+
+
                     <swiper-slide>
+
                         <div class="bottom">
                             <div class="headBar"></div>
                             <div class="number pl118">Q2</div>
@@ -93,17 +97,90 @@
                         <div class="top">
                             <div class="headBar"></div>
                             <div class="content" style="padding-left: 40px;">
-
-
-
-                                <p>Building D-APPs</p>
-                                <p>developer platform</p>
+                                <p>Building D-apps developer</p>
+                                <p>dplatform</p>
                                 <p>Launching D-wallet</p>
                                 <p>&nbsp;</p>
                             </div>
                             <div class="number pl116">Q3</div>
                         </div>
                     </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4">Q4</div>
+                        <div class="content" style="padding-left: 40px;">
+                            <p>Establishing an institution</p>
+                            <p>about making traditional assets</p>
+                            <p>up to the blockchain</p>
+                            <p>&nbsp;</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="top">
+                        <!--<div class="headBar"></div>-->
+                        <div class="headBar roadTitle">
+                            <div class="mt mt34">
+                                <h3>2020</h3>
+                                <p>The Dark Knight Rises</p>
+                                <i class="line"></i>
+                            </div>
+                        </div>
+                        <div class="content" style="padding-left: 40px;">
+                            <p>Improving the protocol</p>
+                            <p>performance</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="number pl116">Q1</div>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4">Q2</div>
+                        <div class="content" style="padding-left: 40px;">
+                            <p>Enriching the  D-apps</p>
+                            <p>Improving the speed of network</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="top">
+                        <div class="headBar"></div>
+                        <div class="content" style="padding-left: 40px;">
+                            <p>Iproving the scale and security</p>
+                            <p>and Ttpreparing for a broader</p>
+                            <p>ecosystem</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="number pl116">Q3</div>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="bottom">
+                        <div class="headBar"></div>
+                        <div class="number plptQ4">Q4</div>
+                        <div class="content" style="padding-left: 40px;">
+                            <p>Establishing the decentralized</p>
+                            <p>exchanges</p>
+                            <p>Enriching Stablecoins pegging</p>
+                            <p>to other indexes</p>
+                        </div>
+
+                    </div>
+                </swiper-slide>
+
                 <div class="swiper-button-prev_road" slot="button-prev"></div>
                 <div class="swiper-button-next_road" slot="button-next"></div>
             </swiper>
@@ -198,6 +275,9 @@
             .mt45{
                 margin-left: 45px;
             }
+            .mt34{
+                margin-left: 34px;
+            }
         }
         .roadContent{
 
@@ -232,6 +312,31 @@
             }
             .swiper-slide:nth-child(7){
                 background-position: 1246px 108px;
+
+            }
+
+            .swiper-slide:nth-child(8){
+                background-position: 1458px 108px;
+
+            }
+
+            .swiper-slide:nth-child(9){
+                background-position: 1670px 108px;
+
+            }
+
+            .swiper-slide:nth-child(10){
+                background-position: 1882px 108px;
+
+            }
+
+            .swiper-slide:nth-child(11){
+                background-position: 2094px 108px;
+
+            }
+
+            .swiper-slide:nth-child(12){
+                background-position: 2306px 108px;
 
             }
             ul{
@@ -284,6 +389,7 @@
                 .pt101{
                     padding-top: 101px;
                 }
+
                 .headBar{
                     height: 92px;
                     width: 100%;
@@ -316,9 +422,16 @@
                 .pl30{
                     padding-left: 30px;
                 }
+                .pl8{
+                    padding-left: 8px;
+                }
                 .headBar{
                     height: 92px;
                     width: 100%;
+                }
+                .plptQ4{
+                    padding-left: 128px;
+                    padding-top: 31px;
                 }
             }
             .swiper-button-prev_road{

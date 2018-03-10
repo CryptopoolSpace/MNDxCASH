@@ -2,26 +2,6 @@
     <div class="introPhoneoBox">
         <Head htitle="USDX" fontSize="29"></Head>
         <h3>The New Era of Stablecoin</h3>
-        <div class="sect01">
-            <!--<img src="../../images/phase01.png" class="phase01"/>-->
-            <div class="phase01Img">
-                <img src="../../images/phase01.png" class="phase01"/>
-                <img src="../../images/usdt-icon.png" class="usdt scaleUSDT"/>
-                <img src="../../images/usdx-icon.png" class="usdx scaleUSDX">
-            </div>
-            <h2>Innovative De-Commerce</h2>
-            <div class="conts">
-                <h3>Kill the Centralized Mechanism</h3>
-                <p>1. Tether can release USDT without any collateral and perform as a centralized entity.</p>
-                <p>2. With USDX’s absolute decentralized system, we build a healthy and organic de-commerce ecosystem.</p>
-            </div>
-
-            <div class="conts mt20">
-                <h3>No Collateral No Fraud and No Risk</h3>
-                <p>1. Fiat currency as collateral have to be placed in one bank account and the bank account can be frozen at any time  for fraud.</p>
-                <p>2. Cryptocurrency as collateral is extremely volatile, and can easily destroy the market before the stablecoin is widely used.</p>
-            </div>
-        </div>
 
         <div class="sect01">
             <!--<img src="../../images/phase02.png"/>-->
@@ -65,6 +45,27 @@
                 <p>3.Variable Transaction Fee</p>
             </div>
 
+        </div>
+
+        <div class="sect01">
+            <!--<img src="../../images/phase01.png" class="phase01"/>-->
+            <div class="phase01Img">
+                <img src="../../images/phase01.png" class="phase01"/>
+                <img src="../../images/usdt-icon.png" class="usdt scaleUSDT"/>
+                <img src="../../images/usdx-icon.png" class="usdx scaleUSDX">
+            </div>
+            <h2>Innovative De-Commerce</h2>
+            <div class="conts">
+                <h3>Kill the Centralized Mechanism</h3>
+                <p>1. Tether can release USDT without any collateral and perform as a centralized entity.</p>
+                <p>2. With USDX’s absolute decentralized system, we build a healthy and organic de-commerce ecosystem.</p>
+            </div>
+
+            <div class="conts mt20">
+                <h3>No Collateral No Fraud and No Risk</h3>
+                <p>1. Fiat currency as collateral have to be placed in one bank account and the bank account can be frozen at any time  for fraud.</p>
+                <p>2. Cryptocurrency as collateral is extremely volatile, and can easily destroy the market before the stablecoin is widely used.</p>
+            </div>
         </div>
     </div>
 
