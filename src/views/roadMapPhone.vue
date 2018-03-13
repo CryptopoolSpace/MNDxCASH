@@ -155,8 +155,8 @@
                     <div class="top">
                         <div class="headBar"></div>
                         <div class="content" style="padding-left: 00px;">
-                            <p>Iproving the scale and security</p>
-                            <p>and Ttpreparing for a broader</p>
+                            <p>Improving the scale and security</p>
+                            <p>and preparing for a broader</p>
                             <p>ecosystem</p>
                             <p>&nbsp;</p>
                         </div>

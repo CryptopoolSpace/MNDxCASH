@@ -3,7 +3,7 @@
 
 
         <Head htitle="Fatal Problems of Current <br/>Stablecoin Projects"  lineHeight="2"></Head>
-        <p class="desc">Traditional Stablecoin projects collect fiat currency as collateral and generate Stablecoin through money<br/> covertion companies, which can pose a risk to policies and cause moral problems.</p>
+        <p class="desc">Traditional Stablecoin projects collect fiat currency as collateral and generate Stablecoin through money<br/> conversion right companies, which can pose a risk to policies and cause moral problems.</p>
         <div class="itemBox clearfix">
             <div class="height50"></div>
             <div class="left">
@@ -22,7 +22,7 @@
         <!--scandals-->
         <div class="scanBox">
             <div class="title">
-                <h2>SCANDALS OF USDT</h2>
+                <h2>Headlines of USDT</h2>
                 <i class="line"></i>
             </div>
             <div class="scrollBox mobileHide">

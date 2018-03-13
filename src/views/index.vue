@@ -2,7 +2,7 @@
     <div ref="nav-home" id="indexSection" class="indexSection clearfix">
             <div class="indexBox">
                 <div class="indexContent">
-                    <h2><i class="icon iconfont icon-USDX"></i></h2>
+                    <h2>USDX Protocol</span></h2>
                     <p>The Ultimate Stage of Stablecoin</p>
                     <div class="feature"><span>Stable</span><i class="point"></i><span>Secure</span><i class="point"></i><span>Scalable</span></div>
                     <div class="whitePaper">
@@ -70,7 +70,7 @@
             .indexContent{
                 margin-left: 465px;
                 padding-top: 70px;
-                padding-left: 45px;
+                padding-left: 34px;
                 background: url("../../images/big_line.png") no-repeat left 70px;
                 .icon-USDX{
                     font-size: 60px;
@@ -126,6 +126,7 @@
             }
             h2{
                 margin-top: -5px;
+                font-size: 64px;
             }
             p{
                 font-size: 30px;
@@ -163,7 +164,7 @@
                     background-position: 20px 300px;
                     background-size: 4px 160px;
                     h2{
-                        font-size: 52px;
+                        font-size: 38px;
                         .icon-USDX{
                             font-size: 50px;
                         }

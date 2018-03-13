@@ -32,16 +32,20 @@
             </div>
 
             <div ref="nav-team">
-                <team></team>
+                <teamMember></teamMember>
             </div>
+
             <div ref="nav-supports">
-                <support></support>
+                <supportMember></supportMember>
             </div>
+
             <div ref="nav-advisors">
-                <Hexagon></Hexagon>
+                <advisorMember></advisorMember>
             </div>
+
             <div ref="nav-partners">
-                <Parteners></Parteners>
+                <partnersMembers  class="mobileHide"></partnersMembers>
+                <partnersMembersMobile  class="mobileShow">></partnersMembersMobile>
             </div>
             <footers></footers>
             <telegramDialog></telegramDialog>
@@ -59,10 +63,15 @@
     import roadMap from './roadMap';
     import roadMapPhone from './roadMapPhone';
     import team from './team';
-    import Support from './support';
+    import teamMember from './teamMember'
+
+    import supportMember from './supportMember';
     import Hexagon from './hexagon';
+    import advisorMember from './advisorMember';
     import Phases from './phases';
     import Parteners from './parteners';
+    import partnersMembers from  './partnersMembers';
+    import partnersMembersMobile from './partnersMembersMobile';
     import Aboutusdx from './Aboutusdx';
     import homeData from '../data/home';
     import footers from './footers';
@@ -135,10 +144,14 @@
             roadMap,
             roadMapPhone,
             team,
-            Support,
+            teamMember,
+            advisorMember,
+            supportMember,
             Hexagon,
             Phases,
             Parteners,
+            partnersMembers,
+            partnersMembersMobile,
             Aboutusdx,
             footers,
             telegramDialog

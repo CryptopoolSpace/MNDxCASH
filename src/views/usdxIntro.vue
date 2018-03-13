@@ -3,9 +3,9 @@
         <Head htitle="USDX：The New Era of Stablecoin"></Head>
         <div class="navBtnBox clearfix">
             <ul>
-                <li :class="curIndex == 0? 'active':''" @click="selectTab(0)">Bottom-Up Revolution</li>
-                <li :class="curIndex == 1? 'active':''" @click="selectTab(1)">Extreme Stabilization</li>
-                <li :class="curIndex == 2? 'active':''" @click="selectTab(2)">Innovative De-Commerce</li>
+                <li :class="curIndex == 0? 'active':''" @click="selectTab(0)">Ground-up Innovation</li>
+                <li :class="curIndex == 1? 'active':''" @click="selectTab(1)">Impeccable Stability</li>
+                <li :class="curIndex == 2? 'active':''" @click="selectTab(2)">Sovereign Money</li>
             </ul>
         </div>
 
