@@ -143,16 +143,11 @@
             usdxIntroPhone,
             roadMap,
             roadMapPhone,
-            team,
             teamMember,
             advisorMember,
             supportMember,
-            Hexagon,
-            Phases,
-            Parteners,
             partnersMembers,
             partnersMembersMobile,
-            Aboutusdx,
             footers,
             telegramDialog
         }

@@ -145,7 +145,6 @@
 
 <style lang="scss">
     .teamMemberBox{
-        /*width: 20px 250px*/
 
         ul{
             width: 1066px;
@@ -154,12 +153,13 @@
             li{
                 width: 250px;
                 margin-right: 22px;
-                height: 475px;
+                height: 500px;
                 background: #23262a;
                 border-radius: 6px;
                 float: left;
                 margin-top: 48px;
-                background: url("../../images/teamMember/team_item_bg.png") no-repeat;
+                background: url("../../images/teamMember/team_item_bg.png");
+                background-size: 250px 500px;
 
                 img{
                     display: block;
