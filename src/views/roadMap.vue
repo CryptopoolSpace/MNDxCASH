@@ -474,24 +474,48 @@
         .roadMapBox{
             width: 1200px;
         }
-        .roadMapBox .roadContent .swiper-slide:nth-child(1) {
-            background-position: -80px 95px;
+        .roadMapBox .roadContent {
+            .swiper-slide:nth-child(1) {
+                background-position: -80px 95px;
+            }
+            .swiper-slide:nth-child(3) {
+                background-position: 358px 91px;
+            }
+            .swiper-slide:nth-child(4) {
+                background-position: 579px 96px;
+            }
+            .swiper-slide:nth-child(5) {
+                background-position: 799px 92px;
+            }
+            .swiper-slide:nth-child(6) {
+                background-position: 1022px 95px;
+            }
+            .swiper-slide:nth-child(7) {
+                background-position: 1246px 94px;
+            }
+            .swiper-slide:nth-child(8){
+                background-position: 1470px 94px;
+            }
+            .swiper-slide:nth-child(9){
+                background-position: 1694px 94px;
+            }
+
+            .swiper-slide:nth-child(10){
+                background-position: 1918px 94px;
+            }
+
+            .swiper-slide:nth-child(11){
+                background-position: 2142px 94px;
+            }
+
+            .swiper-slide:nth-child(12){
+                background-position: 2366px 94px;
+            }
+            .swiper-slide:nth-child(13){
+                background-position: 2590px 94px;
+            }
         }
-        .roadMapBox .roadContent .swiper-slide:nth-child(3) {
-            background-position: 358px 91px;
-        }
-        .roadMapBox .roadContent .swiper-slide:nth-child(4) {
-            background-position: 579px 96px;
-        }
-        .roadMapBox .roadContent .swiper-slide:nth-child(5) {
-            background-position: 799px 92px;
-        }
-        .roadMapBox .roadContent .swiper-slide:nth-child(6) {
-            background-position: 1022px 95px;
-        }
-        .roadMapBox .roadContent .swiper-slide:nth-child(7) {
-            background-position: 1246px 94px;
-        }
+
         .roadMapBox .roadContent .top .number{
             padding-top: 89px;
         }
@@ -512,6 +536,12 @@
         }
         .roadMapBox .roadContent .bottom .pt23{
             padding-top: 23px;
+        }
+        .roadMapBox .roadContent .bottom .plptQ4{
+                padding-left: 141px;
+        }
+        .roadMapBox .roadContent .top .pl116{
+            padding-left: 140px;
         }
     }
 </style>
