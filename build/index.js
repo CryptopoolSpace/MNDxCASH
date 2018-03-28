@@ -9,16 +9,18 @@ const DIST = 'dist';
 var srcVue = 'node_modules/vue/dist/vue.js';
 var srcVuex = 'node_modules/vuex/dist/vuex.js';
 var srcVueRouter = 'node_modules/vue-router/dist/vue-router.js';
+var placeholder = 'src/components/placeholder.js'
 if (process.env.NODE_ENV === 'production') {
-    srcVue = srcVue.replace('vue.js','vue.min.js');
-    srcVuex = srcVuex.replace('vuex.js','vuex.min.js');
-    srcVueRouter = srcVueRouter.replace('vue-router.js','vue-router.min.js');
+    srcVue = srcVue.replace('vue.js', 'vue.min.js');
+    srcVuex = srcVuex.replace('vuex.js', 'vuex.min.js');
+    srcVueRouter = srcVueRouter.replace('vue-router.js', 'vue-router.min.js');
+    placeholder = placeholder.replace('placeholder.js', 'placeholder.min.js')
 }
 
 const cssLoader = [
-    {loader:'style-loader'},
-    {loader: 'css-loader'},
-    {loader: 'postcss-loader'}
+    { loader: 'style-loader' },
+    { loader: 'css-loader' },
+    { loader: 'postcss-loader' }
 ];
 const vueSassConfig = 'css-loader!sass-loader';
 module.exports = {
@@ -39,11 +41,12 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("css/vueStyle.css"),
         new CopyWebpackPlugin([
-            {from: 'images/**/*'},
-            {from: 'whitepaper/**/*'},
-            {from: srcVue, to: 'js/vue.js'},
-            {from: srcVuex, to: 'js/vuex.js'},
-            {from: srcVueRouter, to: 'js/vue-router.js'}
+            { from: 'images/**/*' },
+            { from: 'whitepaper/**/*' },
+            { from: srcVue, to: 'js/vue.js' },
+            { from: srcVuex, to: 'js/vuex.js' },
+            { from: srcVueRouter, to: 'js/vue-router.js' },
+            { from: placeholder, to: 'js/placeholder.js' }
         ]),
         new HtmlWebpackPlugin({
             filename: 'index.html',
@@ -56,20 +59,20 @@ module.exports = {
             },
             inject: "body",
             hash: true,
-            chunks: ["vendor","main"],
+            chunks: ["vendor", "main"],
             chunksSortMode: function (a, b) {
-                var orders = ["vendor","main"];
-                return orders.indexOf(a.names[0])-orders.indexOf(b.names[0]);
+                var orders = ["vendor", "main"];
+                return orders.indexOf(a.names[0]) - orders.indexOf(b.names[0]);
             }
         }),
     ],
     module: {
         rules: [
             { test: /\.html$/, use: ['html-loader'] },
-            { test: /\.js$/, use: [{ loader:'babel-loader' }] },
+            { test: /\.js$/, use: [{ loader: 'babel-loader' }] },
             { test: /\.tsx?$/, use: [{ loader: 'ts-loader' }] },
             { test: /\.css$/, use: cssLoader },
-            { test: /\.(scss|sass)$/, use: cssLoader.concat({loader:'sass-loader'}) },
+            { test: /\.(scss|sass)$/, use: cssLoader.concat({ loader: 'sass-loader' }) },
             { test: /\.(json|data)$/, use: ['json-loader'] },
             { test: /\.(txt|md)$/, use: ['raw-loader'] },
             {
@@ -117,7 +120,7 @@ module.exports = {
                 test: /\.(ttf|woff2?|svg|eot)$/,
                 use: [
                     {
-                        loader:'file-loader',
+                        loader: 'file-loader',
                         options: {
                             name: 'fonts/[name].[ext]?[hash]'
                         }
@@ -137,7 +140,7 @@ module.exports = {
             process.cwd(),
             "node_modules"
         ],
-        extensions: ['.ts','.js','.vue','.json']
+        extensions: ['.ts', '.js', '.vue', '.json']
     }
 };
 
@@ -160,7 +163,7 @@ if (process.env.NODE_ENV === 'production') {
     module.exports.module.rules.unshift({
         test: /\.(js|vue)$/,
         exclude: /libs/,
-        loader: "eslint-loader", 
+        loader: "eslint-loader",
         // options: { configFile: '.eslintrc'},
         enforce: 'pre'
     })

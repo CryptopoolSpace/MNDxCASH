@@ -4,11 +4,13 @@
             <i class="icon iconfont icon-USDX-logo"></i>
             <div @click="navTab" class="navBar"></div>
             <ul class="clearfix mobileHide">
-                <li v-for="(item,index) in nav"><a href="javascript:;" :class="{'active':curpage==index}" @click="to(item,index)" class="anchor-hd" v-html="item.content"></a></li>
+                <li v-for="(item,index) in nav" :key="index"><a href="javascript:;" :class="{'active':curpage==index}" @click="to(item,index)" class="anchor-hd" v-html="item.content"></a></li>
+                <li class="anchor-hd"><router-link to='/login'>Login</router-link></li>
             </ul>
             <div class="navtab-box" :class="showNav?'active':''">
                 <div class="navtab" :class="showNav?'active':''">
-                    <div v-for="(item,index) in nav"><a href="javascript:;" :class="{'active':curpage==index}" @click="to2(item,index)" class="anchor-hd" v-html="item.content"></a></div>
+                    <div v-for="(item,index) in nav" :key="index"><a href="javascript:;" :class="{'active':curpage==index}" @click="to2(item,index)" class="anchor-hd" v-html="item.content"></a></div>
+                    <router-link to='/login' tag='div' class="anchor-hd" :class="{'active':curpage==index}">Login</router-link>
                 </div>
             </div>
         </div>

@@ -2,13 +2,13 @@ const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
 const opn = require('opn');
-const proxyMiddleware = require('http-proxy-middleware');
 const webpackBase = require("./index");
+const proxy = require('http-proxy-middleware');
 var cfg = Object.assign(webpackBase, {
     devtool: "cheap-module-eval-source-map"
 });
 
-const port = process.argv[2]?process.argv[2].replace('--',''):4010;
+const port = process.argv[2] ? process.argv[2].replace('--', '') : 4010;
 const app = express();
 
 cfg.plugins = (webpackBase.plugins || []).concat(
@@ -48,8 +48,8 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
 
 var hotMiddleware = require('webpack-hot-middleware')(compiler)
 // force page reload when html-webpack-plugin template changes
-compiler.plugin('compilation', function(compilation) {
-    compilation.plugin('html-webpack-plugin-after-emit', function(data, cb) {
+compiler.plugin('compilation', function (compilation) {
+    compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
         hotMiddleware.publish({
             action: 'reload'
         })
@@ -57,12 +57,19 @@ compiler.plugin('compilation', function(compilation) {
     })
 })
 
+//代理配置
+var usdxProxy = proxy({
+    target: 'http://10.91.19.214:8181',
+    changeOrigin: true,
+    secure: false
+});
 app.use(require('connect-history-api-fallback')());
 app.use(devMiddleware);
 app.use(hotMiddleware);
+app.use('/web/api', usdxProxy);
 
 
-module.exports = app.listen(port, function(err) {
+module.exports = app.listen(port, function (err) {
     if (err) {
         console.log(err)
         return
