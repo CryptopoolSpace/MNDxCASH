@@ -79,7 +79,13 @@ export default {
         param.append("newPassword", this.changePasswordData.newPassword);
         param.append("restPassword", this.changePasswordData.restPassword);
         axios.post(forgotPassword, param).then(res => {
-          console.log(res.data);
+          if (res.data.status==='success') {
+            bus.$emit("saveSuccess", "密码重置成功");
+          }else{
+            bus.$emit("saveErr", "密码重置失败");
+          }
+        }).catch(err=>{
+          this.err_msg = err;
         });
       }
     }

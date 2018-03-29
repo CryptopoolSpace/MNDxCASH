@@ -25,7 +25,8 @@
 import commonPageHead from "../components/commonPageHead";
 import errMsg from "../components/errMsg";
 import axios from "axios";
-import { loginUrl } from "../data/usdxUrl";
+import { sendMail } from "../data/usdxUrl";
+import bus from "../components/bus";
 
 export default {
   data() {
@@ -60,12 +61,17 @@ export default {
     },
     sendEmail() {
       if (this.checkInput()) {
-        // let param = new URLSearchParams();
-        // param.append("registerMail", this.loginData.email);
-        // param.append("password", this.loginData.passWord);
-        // axios.post(loginUrl, param).then(res => {
-        //   console.log(res.data);
-        // });
+        let param = new URLSearchParams();
+        param.append("mail", this.loginData.email);
+        axios.post(sendMail, param).then(res => {
+          if (res.data.status==='success') {
+            bus.$emit("saveSuccess", "邮件发送成功");
+          }else{
+            bus.$emit("saveErr", "邮件发送失败");
+          }
+        }).catch(err=>{
+          this.err_msg = err;
+        });
       }
     },
     cancle() {

@@ -19,8 +19,11 @@ export default {
     return {};
   },
   methods: {
-    gotoMyProfile(){
-      this.$router.push({ name: 'edit_profile', params: { userId: this.$route.params.userId }})
+    gotoMyProfile() {
+      this.$router.push({
+        name: "edit_profile",
+        params: { userId: this.$route.params.userId }
+      });
     }
   },
   components: {
@@ -58,12 +61,13 @@ export default {
     border-radius: 4px;
     margin: 114px auto 0;
     font-size: 20px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 53px;
-	letter-spacing: 0px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 53px;
+    letter-spacing: 0px;
     color: #ffffff;
     text-align: center;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 720px) {

@@ -24,7 +24,7 @@
 <script type="text/javascript">
 import errMsg from "../components/errMsg";
 import axios from "axios";
-import { forgotPassword } from "../data/usdxUrl";
+import { setPassword } from "../data/usdxUrl";
 
 export default {
   data() {
@@ -77,11 +77,17 @@ export default {
     changePassword() {
       if (this.checkInput()) {
         let param = new URLSearchParams();
-        param.append("registerMail", this.loginData.email);
-        param.append("password", this.loginData.passWord);
-        param.append("password", this.loginData.passWord);
-        axios.post(forgotPassword, param).then(res => {
-          console.log(res.data);
+        param.append("oldPassword", this.loginData.oldPassword);
+        param.append("newPassword", this.loginData.newPassword);
+        param.append("restPassword", this.loginData.retypePassword);
+        axios.post(setPassword, param).then(res => {
+          if (res.data.status==='success') {
+            bus.$emit("saveSuccess", "密码修改成功");
+          }else{
+            bus.$emit("saveErr", "密码修改失败");
+          }
+        }).catch(err=>{
+          this.err_msg = err;
         });
       }
     }

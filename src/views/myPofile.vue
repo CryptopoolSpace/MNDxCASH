@@ -1,6 +1,6 @@
 <template>
     <div id="myProfile">
-        <div id="toast" :class="showToast?'active':''">Profile updated successful !</div>
+        <div id="toast" :class="{'active':showToast,'toastErr':isErr}">Profile updated successful !</div>
         <commonPageHead></commonPageHead>
         <div class="navBar" @click="navTab"></div>
         <div class='myProfile_wrap'>
@@ -32,7 +32,8 @@ export default {
   data() {
     return {
       showNav: false,
-      showToast:false
+      showToast:false,
+      isErr:false
     };
   },
   methods: {
@@ -46,10 +47,18 @@ export default {
   mounted() {
     bus.$on("saveSuccess", data => {
       this.showToast = true;
+      this.isErr = false;
       setTimeout(()=>{
         this.showToast = false;
       },2000)
     });
+    bus.$on("saveErr", data => {
+      this.showToast = true;
+      this.isErr = true;
+      setTimeout(()=>{
+        this.showToast = false;
+      },2000)
+    })
   }
 };
 </script>
@@ -78,6 +87,9 @@ export default {
   }
   #toast.active{
     transform: translateY(0);
+  }
+  #toast.toastErr{
+    background-color: #f75a5a;
   }
   .myProfile_wrap {
     width: 100%;
