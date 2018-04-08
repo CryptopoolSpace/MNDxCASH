@@ -4,6 +4,7 @@
         <h2 class="login_title">LOGIN</h2>
         <div class="login_form">
             <errMsg :err_msg='err_msg' v-if="err_msg!==''"></errMsg>
+            <successMsg :err_msg='success_msg' v-if="success_msg!==''&&success_msg!=undefined"></successMsg>
             <input type="text" class="email_input input" v-model="loginData.email" placeholder="Email" :class="{'err':isEmailErr}">
             <input type="password" class="pw_input input" v-model="loginData.passWord" placeholder="Password" :class="{'err':isPasswordErr}">
             <div class="other">
@@ -26,6 +27,7 @@
 <script type="text/javascript">
 import commonPageHead from "../components/commonPageHead";
 import errMsg from "../components/errMsg";
+import successMsg from "../components/successMsg";
 import axios from "axios";
 import { loginUrl } from "../data/usdxUrl";
 
@@ -33,6 +35,7 @@ export default {
   data() {
     return {
       err_msg: "",
+      success_msg:'',
       loginData: {
         email: "",
         passWord: ""
@@ -41,6 +44,11 @@ export default {
       isPasswordErr: false,
       remember: false
     };
+  },
+  created(){
+    this.success_msg = this.$route.params.resetPassword;
+    console.log(this.$route.params.resetPassword);
+    
   },
   methods: {
     clear() {
@@ -87,7 +95,8 @@ export default {
   },
   components: {
     commonPageHead,
-    errMsg
+    errMsg,
+    successMsg
   }
 };
 </script>
@@ -113,37 +122,6 @@ export default {
   margin: 49px auto 50px;
   box-sizing: border-box;
   padding: 33px 76px 0;
-  .err_msg {
-    width: 380px;
-    height: 50px;
-    background-color: #f75a5a;
-    border-radius: 4px;
-    border: solid 1px #ff0000;
-    line-height: 32px;
-    padding: 17px 22px;
-    box-sizing: border-box;
-    position: relative;
-    p {
-      font-size: 20px;
-      font-weight: normal;
-      font-stretch: normal;
-      height: 16px;
-      line-height: 16px;
-      letter-spacing: 0px;
-      color: #fefefe;
-    }
-    i {
-      position: absolute;
-      background: url(../../images/login/close.png);
-      width: 12px;
-      height: 12px;
-      background-size: 12px 12px;
-      right: 23px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-  }
   .input {
     width: 380px;
     height: 50px;
@@ -264,29 +242,6 @@ export default {
     height: 282px;
     margin: 31px auto 0;
     padding: 18px 48px 0;
-    .err_msg {
-      width: 238px;
-      height: 32px;
-      padding: 11px 14px;
-      p {
-        font-size: 12px;
-        font-weight: normal;
-        font-stretch: normal;
-        height: 10px;
-        line-height: 10px;
-        letter-spacing: 0px;
-        color: #fefefe;
-      }
-      i {
-        width: 8px;
-        height: 8px;
-        background-size: 8px 8px;
-        right: 14px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-    }
     .input {
       width: 240px;
       height: 32px;

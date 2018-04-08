@@ -80,9 +80,9 @@ export default {
         param.append("restPassword", this.changePasswordData.restPassword);
         axios.post(forgotPassword, param).then(res => {
           if (res.data.status==='success') {
-            bus.$emit("saveSuccess", "密码重置成功");
+            this.$router.push({ name: 'login', params: { resetPassword: 'You have change your password successfully,please login now using the new password.' }})
           }else{
-            bus.$emit("saveErr", "密码重置失败");
+            this.err_msg = res.data.msg;
           }
         }).catch(err=>{
           this.err_msg = err;

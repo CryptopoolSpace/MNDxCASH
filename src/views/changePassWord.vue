@@ -25,6 +25,7 @@
 import errMsg from "../components/errMsg";
 import axios from "axios";
 import { setPassword } from "../data/usdxUrl";
+import bus from "../components/bus";
 
 export default {
   data() {
